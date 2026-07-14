@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Notes Redesign — Elaine Shih</title>
+  <meta name="description" content="Redesigning Apple Notes for advanced note-takers — improving IA, editing power, and mobile productivity.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">Elaine Shih</a>
+      <ul class="nav-links">
+        <li><a href="../work.html" class="active">Work</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="cs-hero">
+      <div class="container">
+        <p class="cs-hero-eyebrow">Concept · Product Design · iOS</p>
+        <h1 class="cs-hero-title">Apple Notes Redesign</h1>
+        <p class="cs-hero-hook">Apple Notes is on every iPhone. Advanced note-takers still leave for Notion.</p>
+
+        <div class="cs-meta">
+          <div>
+            <p class="cs-meta-label">Role</p>
+            <p class="cs-meta-value">UX Research · UI Design<br>End-to-end, solo</p>
+          </div>
+          <div>
+            <p class="cs-meta-label">Timeline</p>
+            <p class="cs-meta-value">9 weeks · 2022</p>
+          </div>
+          <div>
+            <p class="cs-meta-label">Team</p>
+            <p class="cs-meta-value">Solo — guided by<br>Sally Chung & Ian Abinoja</p>
+          </div>
+          <div>
+            <p class="cs-meta-label">Status</p>
+            <p class="cs-meta-value">Concept</p>
+          </div>
+          <div>
+            <p class="cs-meta-label">Platform</p>
+            <p class="cs-meta-value">iOS · iPhone</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HERO IMAGE ── -->
+    <div class="cs-full-image">
+      <div class="cs-full-image-wrap">
+        <!-- Replace with hero screenshot -->
+      </div>
+    </div>
+
+    <!-- ── OVERVIEW ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">Overview</p>
+        <h2 class="cs-section-heading">Native reach. Advanced friction.</h2>
+        <p class="cs-body">Apple Notes lives on every iPhone — no download, no setup, no friction at entry. That accessibility makes it the default for millions. But as note-taking habits grow more complex, the app doesn't grow with them.</p>
+        <p class="cs-body">Users who need more — structured notes, reusable templates, table control, fast paragraph manipulation — eventually reach for something else. The irony: those third-party apps are harder to learn, not easier. The opportunity isn't to become Notion. It's to close the gap before users feel the need to leave.</p>
+      </div>
+    </section>
+
+    <!-- ── THE PROBLEM ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">The Problem</p>
+        <h2 class="cs-section-heading">Three ways Apple Notes fails the power user.</h2>
+
+        <div class="cs-three-col">
+          <div class="cs-card">
+            <p class="cs-card-number">01</p>
+            <h3 class="cs-card-heading">Confusing IA</h3>
+            <p class="cs-card-body">The app's structure feels simple — but that simplicity works against users organizing complex notes. What's hidden is hard to find. What's visible isn't always what's needed.</p>
+          </div>
+          <div class="cs-card">
+            <p class="cs-card-number">02</p>
+            <h3 class="cs-card-heading">Editing Restraints</h3>
+            <p class="cs-card-body">Formatting tools exist, but customization is shallow. Users can't apply consistent styles, control table cells, or do anything beyond basic text formatting — limitations that slow down advanced workflows.</p>
+          </div>
+          <div class="cs-card">
+            <p class="cs-card-number">03</p>
+            <h3 class="cs-card-heading">Unproductive Flow</h3>
+            <p class="cs-card-body">Moving and reusing content is tedious. Selecting text word-by-word on mobile is frustrating. There's no template system. Notes can't be easily restructured once written.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RESEARCH & INSIGHTS ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">Research & Insights</p>
+        <h2 class="cs-section-heading">The market has the depth. Notes has the reach.</h2>
+        <p class="cs-body">Competitor analysis across Notion, Bear, and Obsidian confirmed: advanced note-taking apps offer real power, but carry steep learning curves. Users described switching as "necessary but annoying." The frustration wasn't with Apple Notes' simplicity — it was with hitting an invisible ceiling.</p>
+        <p class="cs-body">A UX audit and journey mapping of the existing app surfaced the exact moments that ceiling appears: mid-sentence table edits, trying to reuse a structure from a previous note, formatting a long document on a phone screen. Each moment is small. Together, they push people out.</p>
+      </div>
+    </section>
+
+    <!-- ── KEY DECISIONS ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">Key Decisions</p>
+        <h2 class="cs-section-heading">Three choices that shaped the redesign.</h2>
+
+        <div class="cs-decisions">
+
+          <div class="cs-decision-card">
+            <div>
+              <p class="cs-decision-label">The Decision</p>
+              <p class="cs-decision-body">Should the formatting toolbar hide when the keyboard appears, or stay persistently visible?</p>
+            </div>
+            <div>
+              <p class="cs-decision-label">Options Considered</p>
+              <p class="cs-decision-body">Hide toolbar to maximize screen real estate · Keep toolbar anchored to the keyboard at all times</p>
+            </div>
+            <div class="cs-decision-chose">
+              <p class="cs-decision-label">We chose — persistent toolbar</p>
+              <p class="cs-decision-body">Hiding tools creates friction at exactly the wrong moment — mid-thought. Anchoring the toolbar to the keyboard means formatting is always one tap away, never a mode to enter and exit.</p>
+            </div>
+          </div>
+
+          <div class="cs-decision-card">
+            <div>
+              <p class="cs-decision-label">The Decision</p>
+              <p class="cs-decision-body">How should users rearrange content in long notes on mobile?</p>
+            </div>
+            <div>
+              <p class="cs-decision-label">Options Considered</p>
+              <p class="cs-decision-body">Word/character selection with cut and paste · Paragraph-level drag-and-drop blocks</p>
+            </div>
+            <div class="cs-decision-chose">
+              <p class="cs-decision-label">We chose — paragraph drag</p>
+              <p class="cs-decision-body">Precise text selection on a phone screen is an exercise in frustration. Treating paragraphs as draggable blocks respects the mobile context — faster, less error-prone, and more satisfying to use.</p>
+            </div>
+          </div>
+
+          <div class="cs-decision-card">
+            <div>
+              <p class="cs-decision-label">The Decision</p>
+              <p class="cs-decision-body">Should users be able to save and reuse note structures?</p>
+            </div>
+            <div>
+              <p class="cs-decision-label">Options Considered</p>
+              <p class="cs-decision-body">Notes rebuilt manually each time · Saveable templates with customizable styles applied as presets</p>
+            </div>
+            <div class="cs-decision-chose">
+              <p class="cs-decision-label">We chose — templates + styles</p>
+              <p class="cs-decision-body">Power users repeat the same structures — meeting notes, research logs, project trackers. Making those structures reusable eliminates setup time and pulls Notes into a workflow, not just a scratchpad.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SOLUTION ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">Solution</p>
+        <h2 class="cs-section-heading">Six changes. One throughline: nothing hidden, nothing wasted.</h2>
+      </div>
+
+      <div class="container">
+        <div class="cs-two-col">
+          <div class="cs-two-col-text">
+            <p class="cs-two-col-kicker">Approachability</p>
+            <h3 class="cs-two-col-heading">The toolbar stays. Always.</h3>
+            <p class="cs-two-col-body">Formatting tools now anchor to the keyboard and stay visible whenever you're typing. No hunting through menus. The full suite — bold, italic, lists, tables, paragraph styles — is present the moment you need it.</p>
+          </div>
+          <div class="cs-image-placeholder">
+            <!-- Replace with toolbar screenshot -->
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cs-two-col">
+          <div class="cs-image-placeholder">
+            <!-- Replace with paragraph drag screenshot -->
+          </div>
+          <div class="cs-two-col-text">
+            <p class="cs-two-col-kicker">Productivity</p>
+            <h3 class="cs-two-col-heading">Rearrange paragraphs in one hold.</h3>
+            <p class="cs-two-col-body">Activate the Paragraph panel, then hold and drag to reorder. What used to take 30 seconds of selection and paste operations now takes two seconds. The structure of a note is no longer locked the moment you write it.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cs-two-col">
+          <div class="cs-two-col-text">
+            <p class="cs-two-col-kicker">Power</p>
+            <h3 class="cs-two-col-heading">Tables that actually do table things.</h3>
+            <p class="cs-two-col-body">The new Table panel adds color fills, text formatting, and cell operations: Freeze, Merge, Split. It's not a spreadsheet — it's a table that behaves like one when you need it to, without feeling like one when you don't.</p>
+          </div>
+          <div class="cs-image-placeholder">
+            <!-- Replace with table controls screenshot -->
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cs-two-col">
+          <div class="cs-image-placeholder">
+            <!-- Replace with templates screenshot -->
+          </div>
+          <div class="cs-two-col-text">
+            <p class="cs-two-col-kicker">Reusability</p>
+            <h3 class="cs-two-col-heading">Build once. Reuse always.</h3>
+            <p class="cs-two-col-body">Save any note as a template. Apply custom styles — heading weights, text sizes, color accents — and store them as presets. Meeting notes, research logs, project briefs: start from structure, not from scratch.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cs-two-col">
+          <div class="cs-two-col-text">
+            <p class="cs-two-col-kicker">Navigation</p>
+            <h3 class="cs-two-col-heading">Long notes, short scroll.</h3>
+            <p class="cs-two-col-body">Paragraphs can now be collapsed and expanded. Long notes stay manageable — you see the structure at a glance, then drill in where needed. The difference between a document you navigate and one you wade through.</p>
+          </div>
+          <div class="cs-image-placeholder">
+            <!-- Replace with collapse/expand screenshot -->
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cs-two-col">
+          <div class="cs-image-placeholder">
+            <!-- Replace with new components screenshot -->
+          </div>
+          <div class="cs-two-col-text">
+            <p class="cs-two-col-kicker">Design System</p>
+            <h3 class="cs-two-col-heading">New components. Familiar language.</h3>
+            <p class="cs-two-col-body">Every new icon and UI component was derived directly from Apple's Human Interface Guidelines. Nothing invented for its own sake — each element earns its place by following the system it lives in.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── OUTCOME ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">Outcome</p>
+        <h2 class="cs-section-heading">What a 9-week concept proves.</h2>
+        <p class="cs-body">This was a concept project — no launch metrics, no A/B test. But it demonstrated something worth saying: the gap between Apple Notes and advanced note-taking apps isn't a product category gap. It's a series of small, fixable friction points.</p>
+        <p class="cs-body">The redesign showed that you don't need to rebuild the app to serve power users. You need to surface the tools they already expect, make reorganization feel effortless on mobile, and give them a reason to build inside Notes rather than around it.</p>
+      </div>
+    </section>
+
+    <!-- ── NEXT PROJECT ── -->
+    <section class="cs-next">
+      <div class="container">
+        <p class="cs-next-label">Next Project</p>
+        <a href="silver-mirror.html" class="cs-next-link">
+          Silver Mirror <span class="cs-next-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-col">
+          <p class="footer-label">Featured</p>
+          <nav class="footer-nav" aria-label="Featured projects">
+            <a href="apple-notes.html" class="footer-link">Apple Notes Redesign</a>
+            <a href="silver-mirror.html" class="footer-link">Silver Mirror</a>
+            <a href="plaaan.html" class="footer-link">PLAAAN</a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-label">Reach me at</p>
+          <nav class="footer-nav" aria-label="Contact links">
+            <a href="mailto:workwelaine@gmail.com" class="footer-link">workwelaine@gmail.com</a>
+            <a href="https://linkedin.com/in/elaineshih" class="footer-link" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.instagram.com/elaineshih.design/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+          </nav>
+        </div>
+
+        <div class="footer-col footer-col--badge">
+          <a href="../assets/elaine-shih-resume.pdf"
+             class="resume-badge resume-badge--filled"
+             target="_blank" rel="noopener"
+             aria-label="Download resume">
+            <svg class="badge-ring" viewBox="0 0 120 120" aria-hidden="true">
+              <defs>
+                <path id="badge-circle-footer-an" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/>
+              </defs>
+              <text class="badge-ring-text">
+                <textPath href="#badge-circle-footer-an" startOffset="0%">
+                  Download Resume · Download Resume ·
+                </textPath>
+              </text>
+            </svg>
+            <span class="badge-center" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 2v10M4 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 15h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+      </div>
+      <p class="footer-copyright">Copyright &copy; Elaine Shih 2026. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

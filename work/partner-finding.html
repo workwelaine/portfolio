@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partner Finding — Elaine Shih</title>
+  <meta name="description" content="Redesigning SAP's partner discovery ecosystem for mid-market growth — unifying fragmented finders, detail pages, and data into one trusted experience.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">Elaine Shih</a>
+      <ul class="nav-links">
+        <li><a href="../work.html" class="active">Work</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="cs-hero cs-hero--dark">
+      <div class="container">
+        <p class="cs-hero-eyebrow">Product Design · SAP Business Network · 2025</p>
+        <h1 class="cs-hero-title">Partner Finding</h1>
+        <p class="cs-hero-hook">Before a mid-market company buys from SAP, they need the right implementation partner. The finder was supposed to help. It wasn't.</p>
+        <div class="cs-meta">
+          <div>
+            <p class="cs-meta-label">Role</p>
+            <p class="cs-meta-value">End-to-end UX</p>
+          </div>
+          <div>
+            <p class="cs-meta-label">Timeline</p>
+            <p class="cs-meta-value">2025 — ongoing</p>
+          </div>
+          <div>
+            <p class="cs-meta-label">Team</p>
+            <p class="cs-meta-value">Pod lead · UX researcher · 3-domain stakeholders</p>
+          </div>
+          <div>
+            <p class="cs-meta-label">Status</p>
+            <p class="cs-meta-value">Detail page handed off · Go-live Q3 2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HERO IMAGE ── -->
+    <div class="cs-full-image">
+      <div class="cs-full-image-wrap">
+        <!-- Partner Finding hero screenshot -->
+      </div>
+    </div>
+
+    <!-- ── THE PROBLEM: SCALE ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">The Problem</p>
+        <h2 class="cs-section-heading">Four ways to lose the same customer.</h2>
+        <div class="cs-stat-row">
+          <div>
+            <p class="cs-stat-number">2</p>
+            <p class="cs-stat-label">Separate partner finders</p>
+          </div>
+          <div>
+            <p class="cs-stat-number">3</p>
+            <p class="cs-stat-label">Detail page types</p>
+          </div>
+          <div>
+            <p class="cs-stat-number">3</p>
+            <p class="cs-stat-label">Teams owning different pieces</p>
+          </div>
+          <div>
+            <p class="cs-stat-number">3,500+</p>
+            <p class="cs-stat-label">Partners across 120 countries</p>
+          </div>
+        </div>
+        <p class="cs-body">Partner discovery lived on two domains with two separate finders, three detail page types, and two disconnected data repositories — owned by three different teams, accumulated over years of separate solutions. And the users navigating it are digitally self-served: mid-market buyers new to SAP, evaluating it against competitors, not working through a sales rep. Every friction point is a potential exit to a competitor.</p>
+        <p class="cs-body">That fragmentation produced four distinct failures. The first — users couldn't reliably find a partner finder at all — was solved structurally: the project consolidated the domains, finders, and data into one experience. That was its founding decision, not a design solution. The remaining three are the problems my design work owns.</p>
+        <div class="cs-three-col">
+          <div class="cs-card">
+            <p class="cs-card-number">02</p>
+            <h3 class="cs-card-heading">Matching the right partner</h3>
+            <p class="cs-card-body">Information wasn't structured for comparison, and the four partner types — Sell, Build, Service, Consult &amp; Implement — overlapped so much that users couldn't tell them apart. Users dropped rather than persisted.</p>
+          </div>
+          <div class="cs-card">
+            <p class="cs-card-number">03</p>
+            <h3 class="cs-card-heading">Trusting what they read</h3>
+            <p class="cs-card-body">Between marketing pages, informative pages, and PDF outputs, there was no consistent trust-building experience. Users who didn't feel confident never reached out.</p>
+          </div>
+          <div class="cs-card">
+            <p class="cs-card-number">04</p>
+            <h3 class="cs-card-heading">Knowing what comes next</h3>
+            <p class="cs-card-body">After contacting a partner, users had no expectation-setting, no tracking, no continuity — and SAP had no visibility into whether the connection led anywhere.</p>
+          </div>
+        </div>
+        <p class="cs-body cs-body--spaced">The trust failure was easiest to see up close. Deloitte had two separate pages on SAP's platform — one marketing-focused (Deloitte presenting themselves), one informative (SAP-structured data). Two pages, same partner, neither explaining the other. For a user who doesn't know the SAP ecosystem, that's confusing at best and suspicious at worst.</p>
+      </div>
+    </section>
+
+    <!-- ── RESEARCH ── -->
+    <section class="cs-section cs-section--surface">
+      <div class="container">
+        <p class="cs-section-eyebrow">Research</p>
+        <h2 class="cs-section-heading">One finding changed everything.</h2>
+        <p class="cs-body">Foundational studies, led by our UX researcher, mapped cleanly onto the three design problems. On matching: users don't speak SAP's internal language and don't know what SAP offers — jargon created confusion before the search even started. On trust: too many signals with no way to tell them apart, and on the results page, comparing partners was the single hardest step. On what comes next: the contact form was too generic to tailor to real needs, and whether users would tolerate signing in at all was an open question.</p>
+        <div class="cs-pull-quote">
+          <p class="cs-pull-quote-text">"Partner credentials existed. They just weren't building trust. They were labeled, not explained — and users couldn't tell the difference between what SAP verified and what partners claimed themselves."</p>
+        </div>
+        <p class="cs-body">I ran a copy test to diagnose whether the confusing partner types were a UX problem or a writing problem. It was writing. The definitions weren't wrong — they weren't explained. I connected the content marketing and copy teams to resolve it in parallel with design, which freed us to focus on the structural redesign.</p>
+      </div>
+    </section>
+
+    <!-- ── KEY DECISIONS ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">Key Decisions</p>
+        <h2 class="cs-section-heading">Three choices that shaped the detail page.</h2>
+        <div class="cs-decisions">
+
+          <div class="cs-decision-card">
+            <div>
+              <p class="cs-decision-label">The Decision</p>
+              <p class="cs-decision-body">One detail page has to serve both a partner presenting themselves and a customer evaluating that partner. Which user leads?</p>
+            </div>
+            <div>
+              <p class="cs-decision-label">Options Considered</p>
+              <p class="cs-decision-body">Partner-controlled marketing page · SAP-structured informative page · Unified page weighted toward informative</p>
+            </div>
+            <div class="cs-decision-chose">
+              <p class="cs-decision-label">Informative over marketing</p>
+              <p class="cs-decision-body">Credentials, project delivery numbers, and customer stories lead. Marketing language follows. The same page serves both users without compromising either.</p>
+            </div>
+          </div>
+
+          <div class="cs-decision-card">
+            <div>
+              <p class="cs-decision-label">The Decision</p>
+              <p class="cs-decision-body">The same partner is a fundamentally different entity depending on where you are. How do you reflect that on a single page?</p>
+            </div>
+            <div>
+              <p class="cs-decision-label">Options Considered</p>
+              <p class="cs-decision-body">Global view only · Separate regional pages · One page with location detection and user override</p>
+            </div>
+            <div class="cs-decision-chose">
+              <p class="cs-decision-label">Global + regional, layered by context</p>
+              <p class="cs-decision-body">Deloitte Germany has different SAP recognition than Deloitte Singapore. Both matter. The page pre-selects the user's region, keeps them in control, and surfaces both layers — without feeling overwhelming. This required new component pattern combinations within the existing Design System.</p>
+            </div>
+          </div>
+
+          <div class="cs-decision-card">
+            <div>
+              <p class="cs-decision-label">The Decision</p>
+              <p class="cs-decision-body">Users need to compare partners. A comparison feature is significant scope. What enables comparison without one?</p>
+            </div>
+            <div>
+              <p class="cs-decision-label">Options Considered</p>
+              <p class="cs-decision-body">Dedicated comparison feature · AI-assisted comparison via Joule (ideal state) · Consistent IA across every touchpoint</p>
+            </div>
+            <div class="cs-decision-chose">
+              <p class="cs-decision-label">Consistent IA for MVP, AI comparison for v2</p>
+              <p class="cs-decision-body">Same fields, same hierarchy, every partner tile and detail page. Users can compare mentally even without dedicated UI. The long-term vision: AI-assisted comparison through Joule — "which of these is better for a manufacturing company my size?"</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PERSONALIZATION FALLBACK ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">Solution</p>
+        <h2 class="cs-section-heading">Personalization with a principled fallback.</h2>
+      </div>
+      <div class="container">
+        <div class="cs-two-col">
+          <div class="cs-two-col-text">
+            <h3 class="cs-two-col-heading">Even the default state is grounded in evidence.</h3>
+            <p class="cs-two-col-body">Ideal state: personalized from the moment a user lands — pre-filtered by industry, company size, and SAP product usage for logged-in users. For logged-out users, behavioral signals inform what surfaces.</p>
+            <p class="cs-two-col-body">When neither is available, partners surface based on verified project delivery numbers — real-world performance data, not self-reporting or marketing priority. The default isn't random. That distinction matters.</p>
+          </div>
+          <div class="cs-image-placeholder">
+            <!-- Personalization states diagram -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GLOBAL VS REGIONAL ── -->
+    <section class="cs-section cs-section--surface">
+      <div class="container">
+        <p class="cs-section-eyebrow">Design Detail</p>
+        <h2 class="cs-section-heading">The same partner. Two completely different realities.</h2>
+      </div>
+      <div class="container">
+        <div class="cs-two-col">
+          <div class="cs-image-placeholder">
+            <!-- Global vs regional UI detail -->
+          </div>
+          <div class="cs-two-col-text">
+            <h3 class="cs-two-col-heading">Global recognition and local reality, on one page.</h3>
+            <p class="cs-two-col-body">Deloitte's overall partner level and global competencies sit alongside their regional expertise, local awards, and recognition specific to the user's geography. Same partner, different trust signals depending on where you are.</p>
+            <p class="cs-two-col-body">Location detection pre-selects the region. The user stays in control. This required building new component pattern combinations that hadn't been used in the Design System before — not new components, but new layering logic for holding global and regional data on a single page without overwhelming it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT FORM ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">Solution</p>
+        <h2 class="cs-section-heading">The contact form as a value exchange.</h2>
+        <p class="cs-body">The fourth failure — the black box after contact — is being addressed last, and deliberately. Getting users to sign in before contacting a partner enables personalization and makes the connection more qualified. But sign-in has to feel worth it. The design, now in early wireframes, centers on value props that justify the ask, sets expectations for what happens after outreach, and captures just enough information to make the partner introduction meaningful rather than generic.</p>
+      </div>
+    </section>
+
+    <!-- ── OPEN QUESTIONS ── -->
+    <section class="cs-section cs-section--surface">
+      <div class="container">
+        <p class="cs-section-eyebrow">Open Questions</p>
+        <h2 class="cs-section-heading">What's still unresolved — on purpose.</h2>
+        <p class="cs-body">Enterprise design at this scale means shipping with open questions visible, not pretending they're settled. Three are active right now.</p>
+        <div class="cs-validation-list">
+          <div class="cs-validation-item">
+            <p class="cs-validation-dim">Default state</p>
+            <p class="cs-validation-finding">When neither profile nor behavioral data exists, results fall back to verified delivery numbers. But should the default view organize by location or by service? Partner contracts are service-centric; user mental models often aren't.</p>
+          </div>
+          <div class="cs-validation-item">
+            <p class="cs-validation-dim">Ahead of the market</p>
+            <p class="cs-validation-finding">No competitor personalizes partner discovery dynamically. Being first is either an advantage or an unvalidated risk — the next round of testing is designed to find out which.</p>
+          </div>
+          <div class="cs-validation-item">
+            <p class="cs-validation-dim">Sign-on friction</p>
+            <p class="cs-validation-finding">Requiring sign-in before contact could cause drop-off before users ever see the value. When in the journey to ask — and which value props make it worth it — is still being tested.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── OUTCOME ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">Outcome</p>
+        <h2 class="cs-section-heading">Design is ahead of schedule.</h2>
+        <p class="cs-body">Detail page — MVP and ideal state — handed off to development. Search results page moving to hi-fi. Contact form in early wireframes. Go-live Q3 2026.</p>
+        <p class="cs-body">The work is structured in phases: consulting with development on what's achievable for MVP, with another round of testing planned before the layered improvements toward the ideal state — proactive partner surfacing on product pages, an SAP-verified indicator on delivery numbers, and AI-assisted comparison through Joule.</p>
+        <p class="cs-body">What I'd do differently: start the content governance conversation earlier. Partner-managed content with no SAP quality control is a structural problem design can work around but not solve. Earlier cross-functional alignment on content standards would have given us more influence over what the detail page could reliably show.</p>
+      </div>
+    </section>
+
+    <!-- ── NEXT ── -->
+    <section class="cs-next">
+      <div class="container">
+        <p class="cs-next-label">Next Project</p>
+        <a href="universal-search.html" class="cs-next-link">Universal Search <span class="cs-next-arrow">→</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <p class="footer-label">Featured</p>
+          <nav class="footer-nav" aria-label="Featured projects">
+            <a href="partner-finding.html" class="footer-link">Partner Finding</a>
+            <a href="apple-notes.html" class="footer-link">Apple Notes Redesign</a>
+            <a href="universal-search.html" class="footer-link">Universal Search</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label">Reach me at</p>
+          <nav class="footer-nav" aria-label="Contact links">
+            <a href="mailto:workwelaine@gmail.com" class="footer-link">workwelaine@gmail.com</a>
+            <a href="https://linkedin.com/in/elaineshih" class="footer-link" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.instagram.com/elaineshih.design/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+          </nav>
+        </div>
+        <div class="footer-col footer-col--badge">
+          <a href="../assets/elaine-shih-resume.pdf" class="resume-badge resume-badge--filled" target="_blank" rel="noopener" aria-label="Download resume">
+            <svg class="badge-ring" viewBox="0 0 120 120" aria-hidden="true">
+              <defs><path id="badge-circle-footer-pf" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/></defs>
+              <text class="badge-ring-text"><textPath href="#badge-circle-footer-pf" startOffset="0%">Download Resume · Download Resume ·</textPath></text>
+            </svg>
+            <span class="badge-center" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2v10M4 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 15h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <p class="footer-copyright">Copyright &copy; Elaine Shih 2026. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

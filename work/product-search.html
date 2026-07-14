@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Search — Elaine Shih</title>
+  <meta name="description" content="Redesigning SAP's product search — resolving the tension between functional search and marketing space across a 3,600+ product B2B catalog.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">Elaine Shih</a>
+      <ul class="nav-links">
+        <li><a href="../work.html" class="active">Work</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="cs-hero cs-hero--dark">
+      <div class="container">
+        <p class="cs-hero-eyebrow">Product Design · SAP Store · 2024–Present</p>
+        <h1 class="cs-hero-title">Product Search</h1>
+        <p class="cs-hero-hook">SAP's product search had two jobs: help users find what they need, and help the business surface what matters. It wasn't doing either.</p>
+        <div class="cs-meta">
+          <div>
+            <p class="cs-meta-label">Role</p>
+            <p class="cs-meta-value">End-to-end UX — research, tile redesign, filter system, stakeholder management, intake process design</p>
+          </div>
+          <div>
+            <p class="cs-meta-label">Timeline</p>
+            <p class="cs-meta-value">2024 — ongoing</p>
+          </div>
+          <div>
+            <p class="cs-meta-label">Team</p>
+            <p class="cs-meta-value">Search pod lead · taxonomy team · product category managers · UX researcher</p>
+          </div>
+          <div>
+            <p class="cs-meta-label">Platform</p>
+            <p class="cs-meta-value">SAP Store — 3,600+ products, enterprise B2B buyers globally</p>
+          </div>
+          <div>
+            <p class="cs-meta-label">Status</p>
+            <p class="cs-meta-value">MVP shipped · v2 ongoing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HERO IMAGE ── -->
+    <div class="cs-full-image">
+      <div class="cs-full-image-wrap">
+        <!-- Product Search hero screenshot -->
+      </div>
+    </div>
+
+    <!-- ── THE TENSION ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">The Problem</p>
+        <h2 class="cs-section-heading">Search as a billboard. Filters as an org chart.</h2>
+        <p class="cs-body">When a buyer landed on SAP's product search, two failures worked against them at once. The tiles — the cards showing each result — were filled with marketing copy. Not product names, not specs. Marketing language written to impress, not inform. A buyer who had already applied the right filters and narrowed to the right category was still staring at blurbs that didn't tell them if they'd found the right thing.</p>
+        <p class="cs-body">The filters were the second failure. Long, internally organized, built around how SAP categorizes products — not how buyers think about them. Some filter groups existed purely for internal sales usage. Others were so vague they meant nothing to an external buyer. A user could do everything right — apply every correct filter, scroll through every result — and still not be confident they'd found what they needed.</p>
+        <p class="cs-body">When I started talking to stakeholders, I understood quickly why. Everyone with a product in the SAP Store saw the results page as marketing real estate. More tags meant more visibility. The ask was always additive. But search isn't a billboard. It's a decision-making tool. That tension — functional search vs marketing space — became the spine of everything that followed.</p>
+      </div>
+    </section>
+
+    <!-- ── RESEARCH ── -->
+    <section class="cs-section cs-section--surface">
+      <div class="container">
+        <p class="cs-section-eyebrow">Research</p>
+        <h2 class="cs-section-heading">B2B buyers don't think like B2C shoppers.</h2>
+        <div class="cs-pull-quote">
+          <p class="cs-pull-quote-text">"A 'Discount Available' tag on enterprise software raised one question in testing: why is it discounted? It's like seeing Chanel or Gucci go on sale. You want the deal — but you start wondering what's wrong with it."</p>
+        </div>
+        <p class="cs-body">Data showed above-average filter usage — users were engaging with the search tools. But CTR was low and uneven: some filters were heavily used, others barely touched. Users were trying to narrow to the right result, but once they got there, the tiles weren't compelling enough to click through. The filters weren't the whole problem. The tiles were failing at the moment that mattered most.</p>
+        <p class="cs-body">We grounded decisions in NNG Group and Baymard Institute's search UX best practices, alongside usability testing and competitive research. The B2B context shaped everything — enterprise buyers choose software based on industry fit, technical stack, team size, and implementation timeline. Social proof signals that work in B2C collapse that complexity in ways that actively mislead.</p>
+      </div>
+    </section>
+
+    <!-- ── KEY DECISIONS ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">Key Decisions</p>
+        <h2 class="cs-section-heading">Three decisions built around one principle: show what helps users decide, not what helps products sell.</h2>
+
+        <div class="cs-decisions">
+
+          <div class="cs-decision-card">
+            <div>
+              <p class="cs-decision-label">The Decision</p>
+              <p class="cs-decision-body">Stakeholders wanted everything visible on every tile. Users needed clarity. How much information belongs on a tile — and does the answer change by context?</p>
+            </div>
+            <div>
+              <p class="cs-decision-label">Options Considered</p>
+              <p class="cs-decision-body">Maximum information on every tile · Minimal information everywhere · Contextual density based on what job the user is doing at that moment</p>
+            </div>
+            <div class="cs-decision-chose">
+              <p class="cs-decision-label">Show what users can't get elsewhere on that page</p>
+              <p class="cs-decision-body">On SRP, filters already handle specs — tiles stay clean: name, credential, key differentiator. On product pages promoting related extensions, there are no filters, so tiles show specs, industry fit, and compatibility. Four variants designed for context: SRP, product pages, campaign pages, partner detail pages. Same component, different density. Adopted independently by other teams without onboarding — that's how I knew the system worked.</p>
+            </div>
+          </div>
+
+          <div class="cs-decision-card">
+            <div>
+              <p class="cs-decision-label">The Decision</p>
+              <p class="cs-decision-body">A business stakeholder requested a "Best Seller" tag on result tiles. The reasoning made sense — social proof works. Do you add it?</p>
+            </div>
+            <div>
+              <p class="cs-decision-label">Options Considered</p>
+              <p class="cs-decision-body">Add the tag · Decline without alternative · Reframe what the stakeholder is trying to achieve</p>
+            </div>
+            <div class="cs-decision-chose">
+              <p class="cs-decision-label">No — but not just no</p>
+              <p class="cs-decision-body">Enterprise buyers don't choose software because it's popular. "Best seller" collapses the complexity of fit into a signal that doesn't actually help them decide. But the stakeholder's goal — surfacing products with proven traction — was valid. We proposed best seller as a sort-by option, baked into ranking logic. Users who want popular products can sort for it. Users who don't aren't distracted by it.</p>
+            </div>
+          </div>
+
+          <div class="cs-decision-card">
+            <div>
+              <p class="cs-decision-label">The Decision</p>
+              <p class="cs-decision-body">The grouped filter component in SAP's design system was the right solution for consolidating long filter groups — but it had known usability issues and was untested in production. Ship it or work around it?</p>
+            </div>
+            <div>
+              <p class="cs-decision-label">Options Considered</p>
+              <p class="cs-decision-body">Ship the new DS component despite known issues · Keep the old filter and accept the UX cost · Ship old filter now, fix DS component and update later</p>
+            </div>
+            <div class="cs-decision-chose">
+              <p class="cs-decision-label">Ship the old filter. Follow through on the new one.</p>
+              <p class="cs-decision-body">A non-compliant component to production wasn't the right call before go-live. We flagged the issue to the design system's creative director and shipped the familiar filter. Then I joined DS office hours periodically for six months — consistent presence, no formal tracking. When the improved component shipped with no usability issues, we updated. The short-term tradeoff was right. The follow-through is what made it count.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── INTAKE PROCESS ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">Organizational Design</p>
+        <h2 class="cs-section-heading">Every time we said no, the same question came back: why is this a design decision?</h2>
+        <p class="cs-body">It was a fair question. Without a formal process, our "no" looked like a design opinion. Arbitrary. Easy to challenge. So we built a structure. Any request to add a tag, badge, or filter now goes through co-approval — all three have to align, or the request doesn't move forward.</p>
+      </div>
+      <div class="container">
+        <div class="cs-three-col">
+          <div class="cs-card">
+            <p class="cs-card-number">01</p>
+            <h3 class="cs-card-heading">Business review</h3>
+            <p class="cs-card-body">Led by the pod lead. Is there a strong business reason for this request? What problem is it solving, and for whom?</p>
+          </div>
+          <div class="cs-card">
+            <p class="cs-card-number">02</p>
+            <h3 class="cs-card-heading">UX validation</h3>
+            <p class="cs-card-body">Led by me. Does this serve user needs? Will it help buyers decide faster — or just add noise to an already crowded tile?</p>
+          </div>
+          <div class="cs-card">
+            <p class="cs-card-number">03</p>
+            <h3 class="cs-card-heading">Taxonomy assessment</h3>
+            <p class="cs-card-body">Are there risks or gaps? Does this create inconsistency in how products are categorized or surfaced across the catalog?</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p class="cs-body cs-body--spaced">We also launched monthly office hours — a standing space for stakeholders to ask questions and understand the rationale behind past decisions. Stakeholders stopped feeling like they were hitting a wall. The process made the reasoning visible. They became more receptive: not because we said yes more, but because "no" was no longer personal.</p>
+      </div>
+    </section>
+
+    <!-- ── OUTCOME ── -->
+    <section class="cs-section cs-section--surface">
+      <div class="container">
+        <p class="cs-section-eyebrow">Outcome</p>
+        <h2 class="cs-section-heading">A system that scaled past the team that built it.</h2>
+        <p class="cs-body">Four tile variants shipped, designed for context rather than organizational preference. Filter system rebuilt around how buyers think. DS grouped filter shipped with no usability issues six months post-launch. Intake process officially published across the search team.</p>
+        <p class="cs-body">The tile component was adopted independently by headless commerce and campaign page teams — without any onboarding from me. That's the metric that mattered most: a system built well enough to spread on its own.</p>
+        <p class="cs-body">What I'd do differently: start the intake process earlier. The first few months of rejections would have landed differently with a formal structure behind them. We built it reactively — it should have been proactive.</p>
+      </div>
+    </section>
+
+    <!-- ── NEXT ── -->
+    <section class="cs-next">
+      <div class="container">
+        <p class="cs-next-label">Next Project</p>
+        <a href="universal-search.html" class="cs-next-link">Universal Search <span class="cs-next-arrow">→</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <p class="footer-label">Featured</p>
+          <nav class="footer-nav" aria-label="Featured projects">
+            <a href="partner-finding.html" class="footer-link">Partner Finding</a>
+            <a href="product-search.html" class="footer-link">Product Search</a>
+            <a href="universal-search.html" class="footer-link">Universal Search</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label">Reach me at</p>
+          <nav class="footer-nav" aria-label="Contact links">
+            <a href="mailto:workwelaine@gmail.com" class="footer-link">workwelaine@gmail.com</a>
+            <a href="https://linkedin.com/in/elaineshih" class="footer-link" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.instagram.com/elaineshih.design/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+          </nav>
+        </div>
+        <div class="footer-col footer-col--badge">
+          <a href="../assets/elaine-shih-resume.pdf" class="resume-badge resume-badge--filled" target="_blank" rel="noopener" aria-label="Download resume">
+            <svg class="badge-ring" viewBox="0 0 120 120" aria-hidden="true">
+              <defs><path id="badge-circle-footer-ps" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/></defs>
+              <text class="badge-ring-text"><textPath href="#badge-circle-footer-ps" startOffset="0%">Download Resume · Download Resume ·</textPath></text>
+            </svg>
+            <span class="badge-center" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2v10M4 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 15h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <p class="footer-copyright">Copyright &copy; Elaine Shih 2026. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

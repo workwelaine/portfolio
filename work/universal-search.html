@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal Search — Elaine Shih</title>
+  <meta name="description" content="Taking over a project that had failed to launch twice — starting from scratch, rebuilding cross-team relationships, and shipping SAP's universal search with intelligent search included.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">Elaine Shih</a>
+      <ul class="nav-links">
+        <li><a href="../work.html" class="active">Work</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="cs-hero cs-hero--dark">
+      <div class="container">
+        <p class="cs-hero-eyebrow">Product Design · SAP.com · 2024–Present</p>
+        <h1 class="cs-hero-title">Universal Search</h1>
+        <p class="cs-hero-hook">The project had failed to launch twice. My manager handed it to me with one instruction: start from scratch.</p>
+        <div class="cs-meta">
+          <div>
+            <p class="cs-meta-label">Role</p>
+            <p class="cs-meta-value">UX lead — audit, vision design, stakeholder management, launch</p>
+          </div>
+          <div>
+            <p class="cs-meta-label">Timeline</p>
+            <p class="cs-meta-value">2024 — ongoing</p>
+          </div>
+          <div>
+            <p class="cs-meta-label">Team</p>
+            <p class="cs-meta-value">Search pod lead · dev team · community, support, news</p>
+          </div>
+          <div>
+            <p class="cs-meta-label">Status</p>
+            <p class="cs-meta-value">MVP shipped · v2 in progress</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HERO IMAGE ── -->
+    <div class="cs-full-image">
+      <div class="cs-full-image-wrap">
+        <!-- Universal Search hero screenshot -->
+      </div>
+    </div>
+
+    <!-- ── WHY IT FAILED ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">Why It Had Failed Twice</p>
+        <h2 class="cs-section-heading">The problem wasn't bad design. It was broken relationships.</h2>
+        <p class="cs-body">search.sap.com spans four teams — community, support, news, and dev — each owning a piece of the experience, none aligned on who had final say. The dev team had strong opinions on UX because they had their own product vision. The community team had business pressures driving their timeline. Nobody had successfully brought all of them together around a shared direction.</p>
+        <p class="cs-body">Before I touched it, search had a band-aid for bad results: a manually curated "best bets" list — specific results hardcoded to surface for certain queries. It wasn't a search system. It was a maintenance burden nobody owned. When the wayfinding pod dissolved, we inherited it alongside everything else.</p>
+        <p class="cs-body">Inheriting that history would have been a liability. Starting fresh meant starting with research, rebuilding relationships from scratch, and earning trust before asking for alignment.</p>
+      </div>
+    </section>
+
+    <!-- ── IDEAL STATE ── -->
+    <section class="cs-section cs-section--surface">
+      <div class="container">
+        <p class="cs-section-eyebrow">Approach</p>
+        <h2 class="cs-section-heading">I designed the ideal state first. Then worked backward to MVP.</h2>
+        <div class="cs-pull-quote">
+          <p class="cs-pull-quote-text">"When you search for shoes on Google, it doesn't show you a list of links — it shows product tiles, because it knows you're in buying mode. That was the north star: search that adapts to intent."</p>
+        </div>
+        <p class="cs-body">The company wasn't fully committed to AI yet — that vision was still a few years away. But designing with it in mind shaped every MVP decision. This ideal state thinking stayed internal: a compass for our choices, not a stakeholder presentation. Using it to make better MVP decisions without overselling a future we couldn't guarantee.</p>
+        <p class="cs-body">Working backwards made the scoping decisions clear. Dynamic layouts, personalization, cross-subdomain integration — all deferred. What shipped: reliable results, products surfacing highest, four critical blockers resolved, AI search included in MVP rather than pushed to v2.</p>
+      </div>
+    </section>
+
+    <!-- ── KEY DECISIONS ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">Key Decisions</p>
+        <h2 class="cs-section-heading">Three decisions that got this to launch when two previous attempts hadn't.</h2>
+
+        <div class="cs-decisions">
+
+          <div class="cs-decision-card">
+            <div>
+              <p class="cs-decision-label">The Decision</p>
+              <p class="cs-decision-body">The audit surfaced four critical blockers. The community team was ready to ship. How hard do you hold the line when a team is ready to go?</p>
+            </div>
+            <div>
+              <p class="cs-decision-label">Options Considered</p>
+              <p class="cs-decision-body">Ship with known issues, iterate post-launch · Hold go-live until all blockers resolved · Negotiate scope by severity</p>
+            </div>
+            <div class="cs-decision-chose">
+              <p class="cs-decision-label">Held the line — all four resolved before launch</p>
+              <p class="cs-decision-body">Users with no path forward on empty results. Filters actively downgrading results. Stale news content undermining trust. Unpredictable AI behavior. These weren't polish. Presenting testing evidence to the full team — including a dev team that wasn't happy — was the moment that tested everything. You can't argue with testing evidence.</p>
+            </div>
+          </div>
+
+          <div class="cs-decision-card">
+            <div>
+              <p class="cs-decision-label">The Decision</p>
+              <p class="cs-decision-body">The dev team had strong UX opinions and a history of building without design involvement. Spacing was the first flashpoint — they thought the DS values were too generous. How do you respond?</p>
+            </div>
+            <div>
+              <p class="cs-decision-label">Options Considered</p>
+              <p class="cs-decision-body">Hold position on design system compliance · Escalate through the org · Use every disagreement as a chance to find the right answer together</p>
+            </div>
+            <div class="cs-decision-chose">
+              <p class="cs-decision-label">Consistent presence and transparency — not territory</p>
+              <p class="cs-decision-body">We brought the spacing question to the DS lead and used it to strengthen the system, not to win. Every research finding shared. Every decision explained. Every testing result documented and handed off. By the end, the dev team was inviting us into their own initiatives as design partners.</p>
+            </div>
+          </div>
+
+          <div class="cs-decision-card">
+            <div>
+              <p class="cs-decision-label">The Decision</p>
+              <p class="cs-decision-body">Filters were constrained by metadata — data decisions had been made before design was in the room. One filter ("Resource") was actively making search worse. What do you do when the data limits what UX can achieve?</p>
+            </div>
+            <div>
+              <p class="cs-decision-label">Options Considered</p>
+              <p class="cs-decision-body">Design ideal filters and push for supporting data · Design within existing data · Remove filters that are making search worse</p>
+            </div>
+            <div class="cs-decision-chose">
+              <p class="cs-decision-label">Design within constraints. Document the gap.</p>
+              <p class="cs-decision-body">Removed the Resource filter. Designed the rest to what the data could support. Documented exactly what better data would unlock for v2. The lesson for next time: get in the room when infrastructure decisions are being made, before they constrain what design can do.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── OUTCOME ── -->
+    <section class="cs-section">
+      <div class="container">
+        <p class="cs-section-eyebrow">Outcome</p>
+        <h2 class="cs-section-heading">MVP shipped. A fractured team rebuilt. V2 in progress.</h2>
+        <p class="cs-body">Four critical blockers resolved. Reliable results — best bets list retired. Products surfacing highest. AI search in MVP, not deferred. Dev team relationship transformed: from territorial to collaborative, now bringing us into their own initiatives.</p>
+        <p class="cs-body">V2 is moving toward the vision: semantic understanding, dynamic result layouts, personalization, Product Search tile system applied to universal results. The remaining structural challenge — community, support, and news subdomains still not fully integrated — requires cross-team commitment beyond design scope alone.</p>
+      </div>
+    </section>
+
+    <!-- ── NEXT ── -->
+    <section class="cs-next">
+      <div class="container">
+        <p class="cs-next-label">Next Project</p>
+        <a href="apple-notes.html" class="cs-next-link">Apple Notes Redesign <span class="cs-next-arrow">→</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <p class="footer-label">Featured</p>
+          <nav class="footer-nav" aria-label="Featured projects">
+            <a href="partner-finding.html" class="footer-link">Partner Finding</a>
+            <a href="universal-search.html" class="footer-link">Universal Search</a>
+            <a href="apple-notes.html" class="footer-link">Apple Notes Redesign</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label">Reach me at</p>
+          <nav class="footer-nav" aria-label="Contact links">
+            <a href="mailto:workwelaine@gmail.com" class="footer-link">workwelaine@gmail.com</a>
+            <a href="https://linkedin.com/in/elaineshih" class="footer-link" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.instagram.com/elaineshih.design/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+          </nav>
+        </div>
+        <div class="footer-col footer-col--badge">
+          <a href="../assets/elaine-shih-resume.pdf" class="resume-badge resume-badge--filled" target="_blank" rel="noopener" aria-label="Download resume">
+            <svg class="badge-ring" viewBox="0 0 120 120" aria-hidden="true">
+              <defs><path id="badge-circle-footer-us" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/></defs>
+              <text class="badge-ring-text"><textPath href="#badge-circle-footer-us" startOffset="0%">Download Resume · Download Resume ·</textPath></text>
+            </svg>
+            <span class="badge-center" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2v10M4 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 15h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <p class="footer-copyright">Copyright &copy; Elaine Shih 2026. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
