@@ -10,3 +10,6 @@ Thumbs.db
 
 # Claude Code local config (machine-specific paths)
 .claude/settings.local.json
+
+# Working drafts — not for public repo
+references/
