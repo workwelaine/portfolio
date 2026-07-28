@@ -18,6 +18,7 @@
 // featuredOrder number   1–4, controls homepage position (ai-band always last)
 // featuredType string    'default' | 'ai-band' (full-width homepage treatment)
 // protected    boolean   true = SAP case studies, password gate required
+// wide         boolean   true = spans both grid columns with horizontal layout
 // status       string    'published' | 'coming-soon' | 'draft'
 //                        draft = hidden from all grids until promoted
 // ---------------------------------------------------------
@@ -39,6 +40,7 @@ const projects = [
     featuredOrder: 1,
     featuredType: 'default',
     protected:    true,
+    wide:         true,
     status:       'published',
   },
 
@@ -205,6 +207,7 @@ const projects = [
     featuredOrder: null,
     featuredType: 'default',
     protected:    false,
+    wide:         true,
     status:       'published',
   },
 

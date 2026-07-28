@@ -32,15 +32,16 @@ function cardInnerHTML(p) {
 
 function cardHTML(p) {
   const categoriesAttr = p.categories.join(' ');
+  const wideClass = p.wide ? ' is-wide' : '';
 
   if (p.status === 'coming-soon') {
-    return `<article class="project-card is-coming-soon reveal" data-categories="${categoriesAttr}">
+    return `<article class="project-card is-coming-soon${wideClass} reveal" data-categories="${categoriesAttr}">
       ${cardInnerHTML(p)}
     </article>`;
   }
 
   const gateAttr = p.protected ? ' data-gate' : '';
-  return `<article class="project-card reveal" data-categories="${categoriesAttr}">
+  return `<article class="project-card${wideClass} reveal" data-categories="${categoriesAttr}">
     <a href="work/${p.slug}.html" class="card-link"${gateAttr}>
       ${cardInnerHTML(p)}
     </a>

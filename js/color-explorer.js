@@ -181,7 +181,7 @@
       padding: 0 8px;
     }
     .pxp-logo {
-      font-family: 'Spectral', serif;
+      font-family: 'Cormorant Garamond', serif;
       font-size: 6px;
       font-weight: 400;
       color: var(--color-bg);
@@ -209,7 +209,7 @@
       font-weight: 500;
     }
     .pxp-heading {
-      font-family: 'Spectral', serif;
+      font-family: 'Cormorant Garamond', serif;
       font-size: 9.5px;
       font-weight: 300;
       color: var(--color-text);
@@ -260,7 +260,7 @@
     }
     .pxp-card-body { padding: 4px 5px 5px; }
     .pxp-card-title {
-      font-family: 'Spectral', serif;
+      font-family: 'Cormorant Garamond', serif;
       font-size: 6px;
       font-weight: 300;
       color: var(--color-text);

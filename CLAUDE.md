@@ -87,10 +87,10 @@ Elaine is a UX designer — this portfolio should reflect the same standards she
 ### Colors
 ```css
 --color-bg:          #FFFFFF   /* pure white — main background */
---color-text:        #2E211F   /* warm dark brown — primary text (ink) */
---color-teal:        #3D8080   /* brand teal — site chrome ONLY */
+--color-text:        #1A1A1A   /* neutral near-black — primary text (ink) */
+--color-teal:        #2C5E5E   /* deep verdigris — site chrome ONLY */
 --color-brown:       #6B4E45   /* brown-mauve — case study body accents */
---color-brown-light: #F4F3F1   /* cool neutral — subtle surfaces, dividers */
+--color-brown-light: #FFFFFF   /* pure white — surfaces (cards defined by border only) */
 --color-dark:        #1E2E2E   /* dark teal-black — password gate, footer */
 --color-mid:         #666666   /* mid grey — secondary text */
 ```
@@ -102,7 +102,7 @@ Elaine is a UX designer — this portfolio should reflect the same standards she
 - Never mix both accent colors on the same element
 
 ### Typography
-- **Headings:** Spectral (Google Fonts) — serif, weight 300/400/600
+- **Headings:** Cormorant Garamond (Google Fonts) — serif, weight 300/400/600
 - **Body:** DM Sans (Google Fonts) — sans-serif, weight 300/400/500
 - Always load both from Google Fonts in every HTML file
 

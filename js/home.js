@@ -22,12 +22,14 @@ function featuredCardHTML(p) {
       <div class="card-tags">${tagHTML}</div>
     </div>`;
 
+  const wideClass = p.wide ? ' is-wide' : '';
+
   if (!url) {
-    return `<article class="project-card is-coming-soon reveal">${inner}</article>`;
+    return `<article class="project-card is-coming-soon${wideClass} reveal">${inner}</article>`;
   }
 
   const gateAttr = p.protected ? ' data-gate' : '';
-  return `<article class="project-card reveal">
+  return `<article class="project-card${wideClass} reveal">
     <a href="${url}" class="card-link"${gateAttr}>${inner}</a>
   </article>`;
 }

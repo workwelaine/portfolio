@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elaine Shih — UX Designer</title>
-  <meta name="description" content="A UX designer who thinks in systems, sweats the right details, and considers what comes next.">
+  <title>Stack — Elaine Shih</title>
+  <meta name="description" content="How Elaine Shih works — tools, process, and AI workflow.">
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -15,69 +14,36 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
   <nav id="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">Elaine Shih</a>
       <ul class="nav-links">
         <li><a href="work.html">Work</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="stack.html" class="active">Stack</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- HERO -->
   <main>
-    <section class="hero">
+    <section class="stack-section">
       <div class="container">
-        <div class="hero-inner">
-          <div class="hero-text">
-            <p class="hero-eyebrow">UX Design Specialist · SAP · New York</p>
-            <h1 class="hero-headline">
-              A designer who thinks in <em>systems</em>, sweats the right details, and considers what comes next.
-            </h1>
-            <p class="hero-sub">Currently building partner discovery, universal search, and AI-assisted experiences for SAP's global platform.</p>
-            <div class="hero-links">
-              <a href="work.html" class="btn-primary">View Work</a>
-              <a href="about.html" class="btn-secondary">About Me</a>
-            </div>
-          </div>
-          <div class="hero-visual" aria-hidden="true"></div>
-        </div>
-      </div>
-    </section>
 
-    <!-- FEATURED PROJECTS -->
-    <section class="featured">
-      <div class="container">
-        <p class="section-label reveal">Featured Work</p>
-        <div class="project-grid" id="featured-grid">
-          <!-- Standard featured cards render here -->
+        <div class="stack-header reveal">
+          <p class="about-page-eyebrow">Stack</p>
+          <h1 class="stack-title">How I work</h1>
+          <p class="stack-subtitle">Tools change often. The process changes less: understand the space, frame the decisions, design with precision, and document everything so nothing gets lost at handoff.</p>
+          <p class="stack-updated">Updated July 2026</p>
         </div>
-      </div>
-    </section>
 
-    <!-- AI PROJECT — full-width band -->
-    <section class="ai-band-section reveal">
-      <div class="container">
-        <div id="ai-band-section">
-          <!-- AI band renders here -->
-        </div>
-      </div>
-    </section>
-
-    <!-- HOW I WORK -->
-    <section class="home-process">
-      <div class="container">
-        <p class="section-label reveal">How I Work</p>
         <div class="stack-phases">
 
           <div class="stack-phase reveal">
             <span class="stack-num">01</span>
             <div class="stack-phase-body">
               <h2 class="stack-phase-name">Understand</h2>
-              <p class="stack-phase-desc">Map the space before drawing anything. Stakeholder context, user research, competitive analysis — all documented and synthesized before a frame is opened.</p>
+              <p class="stack-phase-desc">Map the space before drawing anything. I start with stakeholder context, user research, and competitive analysis — all of it documented and synthesized into maps before a frame is opened.</p>
               <div class="stack-tools">
                 <span class="stack-tool">FigJam</span>
                 <span class="stack-tool">Notion</span>
@@ -89,7 +55,7 @@
             <span class="stack-num">02</span>
             <div class="stack-phase-body">
               <h2 class="stack-phase-name">Frame</h2>
-              <p class="stack-phase-desc">Structure the problem as decisions, not requirements. Journey maps, problem statements, decision criteria — things everyone can align on before pixels exist. Claude helps pressure-test assumptions.</p>
+              <p class="stack-phase-desc">Structure the problem as decisions, not requirements. Journey maps, problem statements, decision criteria — things everyone can align on before pixels exist. I use Claude to pressure-test assumptions and sharpen the framing.</p>
               <div class="stack-tools">
                 <span class="stack-tool">FigJam</span>
                 <span class="stack-tool">Notion</span>
@@ -126,7 +92,6 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
@@ -152,16 +117,16 @@
         </div>
 
         <div class="footer-col footer-col--badge">
-          <a href="https://drive.google.com/file/d/1b4rotUchdp8QzKJetisYjctoWc3ZprsP/view?usp=sharing"
+          <a href="assets/elaine-shih-resume.pdf"
              class="resume-badge resume-badge--filled"
              target="_blank" rel="noopener"
              aria-label="Download resume">
             <svg class="badge-ring" viewBox="0 0 120 120" aria-hidden="true">
               <defs>
-                <path id="badge-circle-footer-home" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/>
+                <path id="badge-circle-footer-stack" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/>
               </defs>
               <text class="badge-ring-text">
-                <textPath href="#badge-circle-footer-home" startOffset="0%">
+                <textPath href="#badge-circle-footer-stack" startOffset="0%">
                   Download Resume · Download Resume ·
                 </textPath>
               </text>
@@ -180,9 +145,6 @@
     </div>
   </footer>
 
-  <script src="js/projects.js"></script>
-  <script src="js/gate.js"></script>
-  <script src="js/home.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
