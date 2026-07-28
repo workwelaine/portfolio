@@ -13,7 +13,7 @@ function cardInnerHTML(p) {
     : `<div class="card-thumb-placeholder"></div>`;
 
   const badges = [
-    p.status === 'coming-soon' ? `<span class="card-badge">Coming soon</span>` : '',
+    p.status === 'coming-soon' ? `<span class="card-badge t-shimmer" data-text="Coming soon">Coming soon</span>` : '',
     p.protected ? `<span class="card-lock" aria-label="Password protected">${LOCK_ICON}</span>` : '',
   ].join('');
 
@@ -76,6 +76,8 @@ document.querySelectorAll('.filter-tab').forEach(tab => {
     tab.classList.add('active');
     tab.setAttribute('aria-selected', 'true');
     renderCards(tab.dataset.filter);
+    // Re-observe newly rendered cards for scroll reveal
+    document.querySelectorAll('.reveal:not(.is-visible)').forEach(el => revealObserver.observe(el));
   });
 });
 

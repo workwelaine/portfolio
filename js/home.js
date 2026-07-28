@@ -7,7 +7,7 @@ function featuredCardHTML(p) {
       ${p.thumbnail
         ? `<img src="${p.thumbnail}" alt="${p.title}" loading="lazy" onerror="this.style.display='none'">`
         : `<div class="card-thumb-placeholder"></div>`}
-      ${p.status === 'coming-soon' ? `<span class="card-badge">Coming soon</span>` : ''}
+      ${p.status === 'coming-soon' ? `<span class="card-badge t-shimmer" data-text="Coming soon">Coming soon</span>` : ''}
       ${p.protected ? `<span class="card-lock" aria-label="Password protected">
         <svg width="12" height="14" viewBox="0 0 12 14" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
           <rect x="1" y="6" width="10" height="8" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
@@ -44,7 +44,7 @@ function aiBandHTML(p) {
       <h3 class="ai-band-title">${p.title}</h3>
       ${p.description ? `<p class="ai-band-description">${p.description}</p>` : ''}
       <div class="card-tags">${tagHTML}</div>
-      ${url ? `<a href="${url}" class="ai-band-link">Read the case study <span class="ai-band-link-arrow">→</span></a>` : `<span class="card-badge card-badge--light">Coming soon</span>`}
+      ${url ? `<a href="${url}" class="ai-band-link">Read the case study <span class="ai-band-link-arrow">→</span></a>` : `<span class="card-badge card-badge--light t-shimmer" data-text="Coming soon">Coming soon</span>`}
     </div>
     <div class="ai-band-visual" aria-hidden="true">
       ${p.thumbnail ? `<img src="${p.thumbnail}" alt="">` : ''}
